@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PoppinsLight";
+  src: url("/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "PoppinsSemiBold";
+  src: url("/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: url("/fonts/Lobster-Regular.ttf");
+}
+
+@layer base {
+  body {
+    @apply font-poppinsLight text-sm bg-[#f0f0f0] text-[#212121];
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
